@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import CocktailGallery from "./components/CocktailGallery";
 import '../src/'
-
+//testing testing
 
 function App() {
   const [cocktailData, setCocktailData] = useState([])
