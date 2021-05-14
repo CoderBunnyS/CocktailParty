@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import CocktailGallery from "./components/CocktailGallery";
+import '../src/'
 
 
 function App() {
