@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <CocktailGallery cocktailData = {cocktailData}/>
+      <p>Something should be showing up</p>
     </div>
   );
 }
