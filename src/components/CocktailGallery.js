@@ -5,7 +5,8 @@ const CocktailGallery = ({cocktailData}) => {
     //console.log(cocktailData)
     return (
         <div>
-        <CocktailCard {...cocktailData.drinks[0]} />    
+        <CocktailCard {...cocktailData.drinks[0]} />   
+        <p>Can we get anything to show up?</p> 
         </div>
     );
 };
