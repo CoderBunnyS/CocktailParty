@@ -10,7 +10,7 @@ const Header = ({fetchCocktailData}) => {
     }
 
     const handleSelectChange = (e) => {
-        e. preventDefault()
+        e.preventDefault()
         setSelectedTypeValue(e.target.value)
     }
 
@@ -34,8 +34,8 @@ const Header = ({fetchCocktailData}) => {
                     onChange={handleSelectChange}
                 >
                     <option value="" hidden >Type of Drink</option>
-                    <option value="strAlcoholic">Alcoholic</option>
-                    <option value="strAlcoholic">Non-Alcoholic</option>
+                    <option value="Cocktail">Alcoholic</option>
+                    <option value="Ordinary_Drink">Non-Alcoholic</option>
                     {/* <option value="episode">Episode</option> */}
                 </select>
                 <button onClick={handleClick}>Search</button>
