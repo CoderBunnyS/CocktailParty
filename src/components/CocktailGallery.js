@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import CocktailCard from './CocktailCard'
 
 const CocktailGallery = ({cocktailData, Name, recentGallery }) => {
-    console.log(cocktailData.drinks[0])
+    // console.log(cocktailData.drinks[0])
     const [previousCocktails, setPreviousCocktails] = useState([])
     const [currentCocktail, setCurrentCocktail] = useState([])
     
@@ -12,8 +12,10 @@ const CocktailGallery = ({cocktailData, Name, recentGallery }) => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [cocktailData]);
     
-    const listOfCocktailCards = previousCocktails.map((movie, i) => {
-        return <CocktailCard {...cocktail} key={i} />
+    const listOfCocktailCards = previousCocktails.map((cocktail, i) => {
+        
+    return <CocktailCard {...cocktail} key={i} />
+
     })
     const singleCocktailCard = <CocktailCard {...currentCocktail} />
 

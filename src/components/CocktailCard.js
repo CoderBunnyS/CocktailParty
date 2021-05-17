@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CocktailCard = ({ strDrinkThumb, strDrink, strAlcoholic, strInstructions, strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5 }) => {
-    //console.log(props)
+    console.log(strDrink)
     return (
         <div className="cocktail">
         
