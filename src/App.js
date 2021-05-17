@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import CocktailGallery from "./components/CocktailGallery";
 import Header from "./components/Header"
+import './style/styles.css'
 import '../src/'
 
 

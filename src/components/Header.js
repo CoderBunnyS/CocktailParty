@@ -19,8 +19,8 @@ const Header = ({fetchCocktailData}) => {
         fetchCocktailData(searchedValue, selectedTypeValue)
     }
     return (
-        <div>
-            <h1>What to Drink</h1>
+        <div className='container-header'>
+            <h1 className='what-name'>What to Drink</h1>
             <div>
                 <input
                     type='text'
