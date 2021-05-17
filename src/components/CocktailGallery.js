@@ -16,10 +16,20 @@ const CocktailGallery = ({cocktailData, Name, recentGallery }) => {
         return <CocktailCard {...cocktail} key={i} />
     })
     const singleCocktailCard = <CocktailCard {...currentCocktail} />
+
+    let renderCocktail = () => (recentGallery === true) ? listOfCocktailCards : singleCocktailCard
+
+    if (previousCocktails.length > 3) {
+        previousCocktails.splice(0, 1)
+        setPreviousCocktails(previousCocktails)
+    }
     return (
         <div>
-        <h1>{Name}</h1>
-        <CocktailCard {...cocktailData.drinks[0]} />   
+        <h1 className="name">{Name}</h1>
+        <div className='cocktail-gallery-container'>
+                {renderCocktail()}
+            </div>
+        {/* <CocktailCard {...cocktailData.drinks[0]} />    */}
          
         </div>
     );

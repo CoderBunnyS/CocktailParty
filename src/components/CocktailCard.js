@@ -3,7 +3,7 @@ import React from 'react';
 const CocktailCard = ({ strDrinkThumb, strDrink, strAlcoholic, strInstructions, strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5 }) => {
     //console.log(props)
     return (
-        <div>
+        <div className="cocktail">
         
         <img src={strDrinkThumb} alt={strDrink} />
             <h1>{strDrink}</h1>
@@ -17,6 +17,7 @@ const CocktailCard = ({ strDrinkThumb, strDrink, strAlcoholic, strInstructions, 
                 <li>{strIngredient5}</li>
             </ul>
             <p>{strInstructions}</p>
+            
         </div>
     );
 };
