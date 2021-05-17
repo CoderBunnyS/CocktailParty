@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import CocktailGallery from "./components/CocktailGallery";
+import Header from "./components/Header"
 import '../src/'
+
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
   }, [])
   return (
     <div className="App">
+      <Header />
       <CocktailGallery cocktailData = {cocktailData}/>
       
     </div>

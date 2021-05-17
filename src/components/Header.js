@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Header = () => {
+const Header = ({fetchCocktailData}) => {
     const [searchedValue, setSearchedValue] = useState('')
     const [selectedTypeValue, setSelectedTypeValue] = useState('')
 
@@ -25,18 +25,20 @@ const Header = () => {
                 <input
                     type='text'
                     placeholder='Drink Name'
+                    onChange={handleInput}
                 />
                 <select
                     id="selection"
                     name="selection"
                     placeholder='Type'
+                    onChange={handleSelectChange}
                 >
                     <option value="" hidden >Type of Drink</option>
                     <option value="strAlcoholic">Alcoholic</option>
                     <option value="strAlcoholic">Non-Alcoholic</option>
                     {/* <option value="episode">Episode</option> */}
                 </select>
-                <button>Search</button>
+                <button onClick={handleClick}>Search</button>
             </div>
         </div>
     );
