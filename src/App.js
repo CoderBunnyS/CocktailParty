@@ -31,9 +31,9 @@ function App() {
   return (
     <div className="App">
       <Header fetchCocktailData={fetchCocktailData} />
-      <CocktailGallery name={'Current Search' } cocktailData={cocktailData} recentGallery = {false} />
+      <CocktailGallery name={'Current Search' } cocktailData={cocktailData.drinks[0]} recentGallery = {false} />
       <hr></hr>
-      <CocktailGallery name = {'Previous 3 Searches'} cocktailData={cocktailData} recentGallery={true} />
+      <CocktailGallery name = {'Previous 3 Searches'} cocktailData={cocktailData.drinks[0]} recentGallery={true} />
       
     </div>
   );
