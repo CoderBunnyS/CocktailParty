@@ -32,6 +32,7 @@ function App() {
     <div className="App">
       <Header fetchCocktailData={fetchCocktailData} />
       <CocktailGallery name={'Current Search' } cocktailData={cocktailData.drinks[0]} recentGallery = {false} />
+      <hr></hr>
       <CocktailGallery name = {'Previous 3 Searches'} cocktailData={cocktailData.drinks[0]} recentGallery={true} />
       
     </div>

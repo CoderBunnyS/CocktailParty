@@ -1,6 +1,6 @@
 {
   "name": "cocktail-party",
-  "homepage": ".",
+  "homepage" : "https://coderbunnys.github.io/CocktailParty",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
