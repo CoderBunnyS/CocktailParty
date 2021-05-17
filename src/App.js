@@ -7,9 +7,13 @@ import '../src/'
 
 function App() {
   const [cocktailData, setCocktailData] = useState([])
-  const fetchCocktailData = (searchParam) => {
-    let URL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=martini'
+  const fetchCocktailData = (searchedValue, selectedTypeValue) => {
+    console.log(`selectedTypeValue: ${selectedTypeValue}`)
+    console.log(`searchedValue: ${searchedValue}`)
 
+    let URL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=martini'
+    console.log('fired')
+    
     fetch(URL)
     .then(res => res.json())
     .then(jsonData => setCocktailData(jsonData))
