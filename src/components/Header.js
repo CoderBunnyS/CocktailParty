@@ -17,6 +17,8 @@ const Header = ({fetchCocktailData}) => {
     const handleClick = (e) => {
         e.preventDefault()
         fetchCocktailData(searchedValue, selectedTypeValue)
+        // console.log(fetchCocktailData)
+        
     }
     return (
         <div className='container-header'>

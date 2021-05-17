@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import CocktailCard from './CocktailCard'
 
 const CocktailGallery = ({cocktailData, Name, recentGallery }) => {
-    // console.log(cocktailData.drinks[0])
+    
     const [previousCocktails, setPreviousCocktails] = useState([])
     const [currentCocktail, setCurrentCocktail] = useState([])
     
