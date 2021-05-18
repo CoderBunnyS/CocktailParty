@@ -7,7 +7,7 @@ const CocktailCard = ({ strDrinkThumb, strDrink, strAlcoholic, strInstructions, 
         
         <img src={strDrinkThumb} alt={strDrink} />
             <h1 className="name">{strDrink}</h1>
-            {/* <h3>{strAlcoholic}</h3> */}
+            <h3>{strAlcoholic}</h3>
             
             <ul className="list">
                 <h3>Ingredients</h3>

@@ -22,19 +22,20 @@ function App() {
 
     fetch(URL)
     .then(res => res.json())
-    .then(jsonData => setCocktailData(jsonData))
-    // console.log(cocktailData.drinks[0])
+    // .then(console.log(res.json))
+    .then(jsonData => setCocktailData(jsonData.drinks[0]))
+    console.log(cocktailData)
   }
   useEffect(()=> {
     fetchCocktailData('martini')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   return (
     <div className="App">
       <Header fetchCocktailData={fetchCocktailData} />
-      <CocktailGallery name={'Current Search' } cocktailData={cocktailData} recentGallery = {false} />
+      <CocktailGallery name={'Current Search' } cocktailData={cocktailData} recentGallery = {false} />                                                              ^
       <hr></hr>
       <CocktailGallery name = {'Previous 3 Searches'} cocktailData={cocktailData} recentGallery={true} />
-      
     </div>
   );
 }
