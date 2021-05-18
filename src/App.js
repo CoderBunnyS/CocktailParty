@@ -16,7 +16,7 @@ function App() {
   const fetchCocktailData = (searchedValue, selectedTypeValue = null
   ) => {
 
-    console.log(`selectedTypeValue: ${selectedTypeValue}`)
+    //console.log(`selectedTypeValue: ${selectedTypeValue}`)
     console.log(`searchedValue: ${searchedValue}`)
     // console.log(searchedValue)
 

@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const Header = ({fetchCocktailData}) => {
     const [searchedValue, setSearchedValue] = useState('')
-    const [selectedTypeValue, setSelectedTypeValue] = useState('')
+    //const [selectedTypeValue, setSelectedTypeValue] = useState('')
 
     const handleInput = (e) => {
         e.preventDefault()
