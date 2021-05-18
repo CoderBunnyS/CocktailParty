@@ -41,7 +41,7 @@
   }
   
   .name{
-      background: #7E1F2B;
+
       color: white;
       text-align: center;
       font-weight: 200;
@@ -64,9 +64,8 @@
   justify-self: center;
   -webkit-text-stroke: .5px black; /* width and color */
   }
-  name {
-    justify-content: center;
-    align-items: center;
-    justify-self: center; 
-  }
+
+h2 {
+  background: #7E1F2B;
+}
   
