@@ -13,7 +13,9 @@ import './App.css'
 function App() {
   const [cocktailData, setCocktailData] = useState([])
   
-  const fetchCocktailData = (searchedValue, selectedTypeValue = null
+  // const fetchCocktailData = (searchedValue, selectedTypeValue = null
+  // ) => {
+  const fetchCocktailData = (searchedValue = null
   ) => {
 
     //console.log(`selectedTypeValue: ${selectedTypeValue}`)
