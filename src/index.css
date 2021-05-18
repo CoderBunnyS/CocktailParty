@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1 {
+  font-family: 'Goblin One';
+  font-size: 54px;
+  justify-content: center;
+  color: #7E1F2B;
+}

@@ -1,0 +1,13 @@
+//dropdown menu
+
+<select
+                    id="selection"
+                    name="selection"
+                    placeholder='Type'
+                    onChange={handleSelectChange}
+                >
+                    <option value="" hidden >Type of Drink</option>
+                    <option value="Cocktail">Alcoholic</option>
+                    <option value="Ordinary_Drink">Non-Alcoholic</option>
+                    {/* <option value="episode">Episode</option> */}
+                </select>

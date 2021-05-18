@@ -4,12 +4,13 @@
 .App{
     display: flex;
     flex-direction: column;
+    background-color: #C28D5C;
   }
   
   /* CocktailCard Component Styles */
   .cocktail{
     /* height: auto; */
-    width: 25%;
+    width: 30%;
     border: lightgrey 5px solid;
     margin: 10px;
     list-style-type: none;
@@ -40,10 +41,12 @@
   }
   
   .name{
-      background: #510169;
+      background: #7E1F2B;
       color: white;
       text-align: center;
-      font-weight: 300;
+      font-weight: 200;
+      padding: 10px;
+      font-size: fit-content;
   }
   
   /* Header Component Styles */
@@ -56,7 +59,14 @@
   }
   
   .what-name{
-    font-weight: 600;
-    font-size: medium;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  -webkit-text-stroke: .5px black; /* width and color */
+  }
+  name {
+    justify-content: center;
+    align-items: center;
+    justify-self: center; 
   }
   

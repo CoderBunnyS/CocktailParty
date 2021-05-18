@@ -2,6 +2,10 @@ import { useEffect, useState } from 'react';
 import CocktailGallery from "./components/CocktailGallery";
 import Header from "./components/Header"
 import './style/styles.css'
+import './App.css'
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+</style>
 
 
 
@@ -34,7 +38,7 @@ function App() {
     <div className="App">
       <Header fetchCocktailData={fetchCocktailData} />
       <CocktailGallery name={'Current Search' } cocktailData={cocktailData} recentGallery = {false} />                                                              ^
-      <hr></hr>
+      
       <CocktailGallery name = {'Previous 3 Searches'} cocktailData={cocktailData} recentGallery={true} />
     </div>
   );

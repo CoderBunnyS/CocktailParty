@@ -9,10 +9,10 @@ const Header = ({fetchCocktailData}) => {
         setSearchedValue(e.target.value)
     }
 
-    const handleSelectChange = (e) => {
-        e.preventDefault()
-        setSelectedTypeValue(e.target.value)
-    }
+    // const handleSelectChange = (e) => {
+    //     e.preventDefault()
+    //     setSelectedTypeValue(e.target.value)
+    // }
 
     const handleClick = (e) => {
         e.preventDefault()
@@ -22,24 +22,14 @@ const Header = ({fetchCocktailData}) => {
     }
     return (
         <div className='container-header'>
-            <h1 className='what-name'>What to Drink</h1>
+            <h1 className='what-name'>Cocktail Dictionary</h1>
             <div>
                 <input
                     type='text'
                     placeholder='Drink Name'
                     onChange={handleInput}
                 />
-                <select
-                    id="selection"
-                    name="selection"
-                    placeholder='Type'
-                    onChange={handleSelectChange}
-                >
-                    <option value="" hidden >Type of Drink</option>
-                    <option value="Cocktail">Alcoholic</option>
-                    <option value="Ordinary_Drink">Non-Alcoholic</option>
-                    {/* <option value="episode">Episode</option> */}
-                </select>
+                
                 <button onClick={handleClick}>Search</button>
             </div>
         </div>

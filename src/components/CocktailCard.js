@@ -19,11 +19,11 @@ const CocktailCard = ({
   return (
     <div className="cocktail">
       <img src={strDrinkThumb} alt={strDrink} />
-      <h1 className="name">{strDrink}</h1>
+      <h2 className="name">{strDrink}</h2>
       <h6>Type:{strAlcoholic}</h6>
 
       <ul className="list">
-        <h3>Ingredients</h3>
+        <h4>Ingredients:</h4>
         <li>{strIngredient1}</li>
         <li>{strIngredient2}</li>
         <li>{strIngredient3}</li>
