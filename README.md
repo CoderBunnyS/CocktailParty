@@ -1,3 +1,7 @@
+# Cocktail Dictionary
+
+This project was created to continue to practice my React skills. Users can search by full name or by letter. This dynamically updates the API call to TheCocktailDB and renders a card with information and instuctions regarding the cocktail found. The users last 3 searches are underneath the current card for reference. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
