@@ -21,7 +21,7 @@ const CocktailCard = ({
       
       <h2 className="name">{strDrink}</h2>
       <img src={strDrinkThumb} alt={strDrink} />
-      <h6>Type: {strAlcoholic}</h6>
+      <h5>Type: {strAlcoholic}</h5>
       <ul className="list">
         <h4>Ingredients:</h4>
         <li>{strIngredient1}</li>
@@ -35,7 +35,7 @@ const CocktailCard = ({
         <li>{strIngredient9}</li>
         <li>{strIngredient10}</li>
       </ul>
-      <h3>Instructions</h3>
+      <h3 className="instructions">Instructions</h3>
       <p>{strInstructions}</p>
     </div>
   );
