@@ -2,23 +2,23 @@ import { useState } from 'react';
 
 const Header = ({fetchCocktailData}) => {
     const [searchedValue, setSearchedValue] = useState('')
-    //const [selectedTypeValue, setSelectedTypeValue] = useState('')
+    const [selectedTypeValue, setSelectedTypeValue] = useState('')
 
     const handleInput = (e) => {
         e.preventDefault()
         setSearchedValue(e.target.value)
     }
 
-    // const handleSelectChange = (e) => {
-    //     e.preventDefault()
-    //     setSelectedTypeValue(e.target.value)
-    // }
+    const handleSelectChange = (e) => {
+        e.preventDefault()
+        setSelectedTypeValue(e.target.value)
+    }
 
     const handleClick = (e) => {
         e.preventDefault()
-        // fetchCocktailData(searchedValue, selectedTypeValue)
+        fetchCocktailData(searchedValue, selectedTypeValue)
         fetchCocktailData(searchedValue)
-        // console.log(fetchCocktailData)
+        console.log(fetchCocktailData)
         
     }
     return (
