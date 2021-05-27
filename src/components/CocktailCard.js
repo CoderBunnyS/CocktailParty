@@ -18,9 +18,9 @@ const CocktailCard = ({
 }) => {
   return (
     <div className="cocktail">
-      
-      <h2 className="name">{strDrink}</h2>
       <img src={strDrinkThumb} alt={strDrink} />
+      <h2 className="name">{strDrink}</h2>
+      
       <h5>Type: {strAlcoholic}</h5>
       <ul className="list">
         <h4>Ingredients:</h4>
