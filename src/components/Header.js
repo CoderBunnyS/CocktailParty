@@ -24,7 +24,7 @@ const Header = ({fetchCocktailData}) => {
     }
     return (
         <div className='container-header'>
-            <h1 className='what-name'>Cocktail Party!</h1>
+            <h1 id="rainbow" className='what-name'>Cocktail Party!</h1>
             <div>
                 <input
                     type='text'
