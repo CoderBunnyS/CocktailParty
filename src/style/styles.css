@@ -96,6 +96,14 @@ p {
 	z-index: -1;
 	animation: steam 20s linear infinite;
 }
+#rainbow {
+
+  border: 5px solid transparent;
+  text-shadow: linear-gradient(to bottom right, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+  #0000ff, #00ff00,#ffff00, #ff0000 100%);
+  border-image-slice: 1;
+  animation: steam 20s linear infinite;
+}
 
 
 @keyframes steam {
