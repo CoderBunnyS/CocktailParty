@@ -10,6 +10,7 @@ const Header = ({fetchCocktailData}) => {
     }
 
     const handleSelectChange = (e) => {
+        
         e.preventDefault()
         setSelectedTypeValue(e.target.value)
     }
