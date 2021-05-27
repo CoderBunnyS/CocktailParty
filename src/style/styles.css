@@ -57,7 +57,8 @@
   .container-header {
     display: flex;
     justify-content: space-between;
-    padding: 12px;
+    padding: 50px;
+    
     align-items: center;
     /* background-color: #f7f8f9; */
   }
@@ -67,17 +68,6 @@
   align-items: center;
   justify-self: center;
   -webkit-text-stroke: .5px black; /* width and color */
-  content: '';
-	position: absolute;
-	left: -2px;
-	top: -2px;
-	border-image: linear-gradient(to bottom right, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-		#0000ff, #00ff00,#ffff00, #ff0000);
-	background-size: 400%;
-	width: calc(30% + 4px);
-	/* height: calc(100% + 4px); */
-	z-index: -1;
-	animation: steam 20s linear infinite;
 
   }
 
@@ -106,7 +96,7 @@ p {
 	z-index: -1;
 	animation: steam 20s linear infinite;
 }
-h1 {}
+
 
 @keyframes steam {
 	0% {
