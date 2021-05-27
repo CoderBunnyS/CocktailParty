@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const Header = ({fetchCocktailData}) => {
     const [searchedValue, setSearchedValue] = useState('')
-    const [selectedTypeValue, setSelectedTypeValue] = useState('')
+    //const [selectedTypeValue, setSelectedTypeValue] = useState('')
 
     const handleInput = (e) => {
         e.preventDefault()
@@ -17,7 +17,7 @@ const Header = ({fetchCocktailData}) => {
 
     const handleClick = (e) => {
         e.preventDefault()
-        fetchCocktailData(searchedValue, selectedTypeValue)
+        //fetchCocktailData(searchedValue, selectedTypeValue)
         fetchCocktailData(searchedValue)
         console.log(fetchCocktailData)
         
