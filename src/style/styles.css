@@ -4,16 +4,19 @@
 .App{
     display: flex;
     flex-direction: column;
-    background-color: #F0B859;
+    
   }
   
   /* CocktailCard Component Styles */
   .cocktail{
     /* height: auto; */
     width: 30%;
-    border: lightgrey 5px solid;
     margin: 10px;
     list-style-type: none;
+    position: relative;
+    /* margin: 300px auto 0; */
+    background: linear-gradient(0deg, #000, #272727);
+    color: white;
   }
   .list {
     list-style-type: none; 
@@ -56,7 +59,7 @@
     justify-content: space-between;
     padding: 12px;
     align-items: center;
-    background-color: #f7f8f9;
+    /* background-color: #f7f8f9; */
   }
   
   .what-name{
@@ -66,10 +69,7 @@
   -webkit-text-stroke: .5px black; /* width and color */
   }
 
-h2 {
-  background: #A0203D;
 
-}
 .instructions {
   margin-top: 70px;
   padding: 0px 10px;
@@ -79,6 +79,36 @@ h5 {
 }
 p {
   padding: 0px 10px;
+}
+
+.cocktail:before, .cocktail:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.cocktail:after {
+	filter: blur(50px);
 }
  
 @media only screen 

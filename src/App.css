@@ -1,8 +1,6 @@
-.container-header {
-    background-image: url("./style/kobby-mendez-xBFTjrMIC0c-unsplash (1).jpg");
-    height: 35em;
-    background-size: cover;
-    position: relative;
-    top: -200px;
-    margin-bottom: -250px;
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
 }
