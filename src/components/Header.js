@@ -9,11 +9,11 @@ const Header = ({fetchCocktailData}) => {
         setSearchedValue(e.target.value)
     }
 
-    const handleSelectChange = (e) => {
+    // const handleSelectChange = (e) => {
         
-        e.preventDefault()
-        setSelectedTypeValue(e.target.value)
-    }
+    //     e.preventDefault()
+    //     setSelectedTypeValue(e.target.value)
+    // }
 
     const handleClick = (e) => {
         e.preventDefault()
