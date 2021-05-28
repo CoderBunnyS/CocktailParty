@@ -1,76 +1,96 @@
 /* styles.css */
 
 /* App Component Styles */
-.App{
-    display: flex;
-    flex-direction: column;
-    
-  }
-  
-  /* CocktailCard Component Styles */
-  .cocktail{
-    /* height: auto; */
-    width: 30%;
-    margin: 10px;
-    list-style-type: none;
-    position: relative;
-    /* margin: 300px auto 0; */
-    background: linear-gradient(0deg, #000, #272727);
-    color: white;
-  }
-  .list {
-    list-style-type: none; 
-  }
-  
-  img{
-    width: 100%;
-    
+.App {
+  display: flex;
+  flex-direction: column;
+}
 
-  }
-  
-  /* CocktailGallery Styles */
-  .container {
-      width: 100%;
-      padding-left: 10px;
-  }
-  
-  .cocktail-gallery-container{
-      margin: 10px;
-      padding: 20px 0;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-  }
-  
-  .name{
-      font-size: 55px;
-      color: white;
-      text-align: center;
-      font-weight: 300;
-      padding: 5px;
-      font-size: fit-content;
-      margin-top: 15px;
-  }
-  
-  /* Header Component Styles */
-  .container-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    
-    align-items: center;
-    /* background-color: #f7f8f9; */
-  }
-  
-  .what-name{
+/* CocktailCard Component Styles */
+.cocktail {
+  /* height: auto; */
+  width: 30%;
+  margin: 10px;
+  list-style-type: none;
+  position: relative;
+  /* margin: 300px auto 0; */
+  background: linear-gradient(0deg, #000, #272727);
+  color: white;
+}
+.cocktail:before,
+.cocktail:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+.list {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* CocktailGallery Styles */
+.container {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.cocktail-gallery-container {
+  margin: 10px;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-size: 55px;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  padding: 5px;
+  font-size: fit-content;
+  margin-top: 15px;
+}
+
+/* Header Component Styles */
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  align-items: center;
+  /* background-color: #f7f8f9; */
+}
+
+.what-name {
   justify-content: center;
   align-items: center;
   justify-self: center;
-  -webkit-text-stroke: .5px black; /* width and color */
-
-  }
-
+  -webkit-text-stroke: 0.5px black; /* width and color */
+}
 
 .instructions {
   margin-top: 70px;
@@ -83,56 +103,53 @@ p {
   padding: 0px 10px;
 }
 
-.cocktail:before, .cocktail:after {
-	content: '';
-	position: absolute;
-	left: -2px;
-	top: -2px;
-	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-		#0000ff, #00ff00,#ffff00, #ff0000);
-	background-size: 400%;
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
-	z-index: -1;
-	animation: steam 20s linear infinite;
-}
-#rainbow {
 
+#rainbow {
   border: 5px solid transparent;
-  text-shadow: linear-gradient(to bottom right, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-  #0000ff, #00ff00,#ffff00, #ff0000 100%);
+  text-shadow: linear-gradient(
+    to bottom right,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000 100%
+  );
   border-image-slice: 1;
   animation: steam 20s linear infinite;
 }
 
-
 @keyframes steam {
-	0% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: 400% 0;
-	}
-	100% {
-		background-position: 0 0;
-	}
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .cocktail:after {
-	filter: blur(50px);
+  filter: blur(50px);
 }
- 
-@media only screen 
-    and (max-width : 1050px) 
-    and (orientation : portrait) 
-    and (-webkit-min-device-pixel-ratio : 1) {
-      body {
-        display: block;
-      }
-      .content {
-        display: block;
-      }
-      .cocktail {
-        width: 100%;
-      }
-    }
+
+@media only screen and (max-width: 1050px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    display: block;
+  }
+  .content {
+    display: block;
+  }
+  .cocktail {
+    width: 100%;
+  }
+}
+
+
+

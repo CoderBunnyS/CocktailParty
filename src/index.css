@@ -12,8 +12,8 @@ code {
     monospace;
 }
 h1 {
-  font-family: 'Goblin One';
-  font-size: 54px;
+  margin-top: 5%;
+  /* font-size: 54px; */
   justify-content: center;
   color: white;
 }

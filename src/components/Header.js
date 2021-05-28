@@ -20,17 +20,24 @@ const Header = ({fetchCocktailData}) => {
         //fetchCocktailData(searchedValue, selectedTypeValue)
         fetchCocktailData(searchedValue)
         console.log(fetchCocktailData)
+        document.getElementById('input').value='';
         
     }
     return (
         <div className='container-header'>
             <h1 id="rainbow" className='what-name'>Cocktail Party!</h1>
             <div>
-                <input
+            
+                {/* <input
+                    id = 'input'
                     type='text'
-                    placeholder='Drink Name'
+                    placeholder='Search for a drink by name'
                     onChange={handleInput}
-                />
+                /> */}
+                <div class="container">
+  <input placeholder='Search...' class='js-search' type="text"></input>
+  <i class="fa fa-search"></i>
+</div>
                 
                 <button onClick={handleClick}>Search</button>
             </div>
