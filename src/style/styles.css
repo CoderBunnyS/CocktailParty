@@ -80,7 +80,7 @@ img {
 .container-header {
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 10px;
   align-items: center;
   /* background-color: #f7f8f9; */
 }
@@ -106,19 +106,7 @@ p {
 
 #rainbow {
   border: 5px solid transparent;
-  text-shadow: linear-gradient(
-    to bottom right,
-    #fb0094,
-    #0000ff,
-    #00ff00,
-    #ffff00,
-    #ff0000,
-    #fb0094,
-    #0000ff,
-    #00ff00,
-    #ffff00,
-    #ff0000 100%
-  );
+  font-weight: 100;
   color: #fb0094;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 84px;

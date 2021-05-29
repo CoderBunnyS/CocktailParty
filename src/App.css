@@ -16,7 +16,7 @@ body {
     height: 60px;
     border-radius: 40px;
     padding: 10px;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .searchBox:hover > .searchInput {
@@ -26,11 +26,11 @@ body {
 
 .searchBox:hover > .searchButton {
   background: white;
-  color : #2f3640;
+  color : #fb0094;
 }
 
 .searchButton {
-    color: white;
+    color: #fb0094;
     float: right;
     width: 60px;
     height: 60px;
@@ -40,6 +40,8 @@ body {
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
 }
 
 .searchInput {
@@ -48,7 +50,7 @@ body {
     outline:none;
     float:left;
     padding: 0;
-    color: white;
+    color: #fb0094;
     font-size: 16px;
     transition: 0.4s;
     line-height: 60px;
@@ -60,5 +62,16 @@ body {
 .searchBox:hover > .searchInput {
     width: 150px;
     padding: 0 6px;
+}
+} 
+@media screen and (max-width: 500px) {
+.searchBox:hover > .searchInput {
+    width: 100%;
+    display: block;
+    padding: 0 6px;
+}
+.container-header {
+    width: 100%;
+    display: block;
 }
 } 
