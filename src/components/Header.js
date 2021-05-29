@@ -28,16 +28,13 @@ const Header = ({fetchCocktailData}) => {
             <h1 id="rainbow" className='what-name'>Cocktail Party!</h1>
             <div>
             
-                {/* <input
+                <input
                     id = 'input'
                     type='text'
                     placeholder='Search for a drink by name'
                     onChange={handleInput}
-                /> */}
-                <div class="container">
-  <input placeholder='Search...' class='js-search' type="text"></input>
-  <i class="fa fa-search"></i>
-</div>
+                />
+                
                 
                 <button onClick={handleClick}>Search</button>
             </div>
