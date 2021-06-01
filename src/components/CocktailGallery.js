@@ -27,6 +27,8 @@ const CocktailGallery = ({cocktailData, Name, recentGallery }) => {
     }
     return (
         <div>
+        <h2>Search History</h2>
+        <hr></hr>
         <h1 className="name">{Name}</h1>
         <div className='cocktail-gallery-container'>
                 {renderCocktail()}

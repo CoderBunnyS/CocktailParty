@@ -25,7 +25,7 @@ const Header = ({ fetchCocktailData }) => {
   return (
     <div className="container-header">
       <h1 id="rainbow" className="what-name">
-        Cocktail Party!
+        Cocktail Disco!
       </h1>
 
       <div class="searchBox">
