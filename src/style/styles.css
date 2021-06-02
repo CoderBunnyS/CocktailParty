@@ -109,7 +109,7 @@ p {
   border: 5px solid transparent;
   font-weight: 100;
   color: #fb0094;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: 'Limelight', cursive; */
   font-size: 80px;
   border-image-slice: 1;
   animation: steam 20s linear infinite;

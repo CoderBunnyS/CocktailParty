@@ -2,12 +2,10 @@ import { useEffect, useState } from "react";
 import CocktailGallery from "./components/CocktailGallery";
 import Header from "./components/Header";
 import "./style/styles.css";
-import "./App.css";
+import "./style/App.css";
 <style>
-  @import
-  url('https://leapis.com/css2?family=Goblin+One&display=swap', 'https://fonts.googleapis.com/css2?family=Limelight&display=swap');
-  
-</style>;
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+</style>
 
 function App() {
   const [cocktailData, setCocktailData] = useState([]);
