@@ -5,7 +5,8 @@ import "./style/styles.css";
 import "./App.css";
 <style>
   @import
-  url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+  url('https://leapis.com/css2?family=Goblin+One&display=swap', 'https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+  
 </style>;
 
 function App() {

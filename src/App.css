@@ -2,13 +2,13 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #000;
+	/* background-color: #000; */
 }
 
 /* NEW CODE */
 
 .searchBox {
-
+    
     background: #2f3640;
     height: 60px;
     border-radius: 40px;
