@@ -46,7 +46,7 @@ body {
     
 }
 
-.searchInput {
+/* .searchInput {
     border:none;
     background: none;
     outline:none;
@@ -58,7 +58,7 @@ body {
     line-height: 60px;
     width: 0px;
 
-}
+} */
 
 @media screen and (max-width: 620px) {
 .searchBox:hover > .searchInput {
