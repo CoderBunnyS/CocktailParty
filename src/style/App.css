@@ -27,11 +27,11 @@ body {
 
 .searchBox:hover > .searchButton {
   background: white;
-  color : #fb0094;
+  color : #55173b;
 }
 
 .searchButton {
-    color: #fb0094;
+    color: #55173b;
     float: right;
     width: 60px;
     height: 60px;
